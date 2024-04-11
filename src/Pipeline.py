@@ -35,9 +35,9 @@ class PipelineJobRequiredResources(BaseModel):
 
 class PipelineJob(BaseModel):
     processor_name: str
-    inputs: list[PipelineJobInput]
-    outputs: list[PipelineJobOutput]
-    parameters: list[PipelineJobParameter]
+    inputs: List[PipelineJobInput]
+    outputs: List[PipelineJobOutput]
+    parameters: List[PipelineJobParameter]
     required_resources: PipelineJobRequiredResources
     run_method: str
 
